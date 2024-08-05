@@ -1,0 +1,10 @@
+    version: '1'
+    services:
+      filemultiloader:
+        build:
+          context: ./
+          dockerfile: ./docker/filemultiloader.dockerfile
+        image: filemultiloader
+        container_name: filemultiloader
+        ports:
+          - "5123:5123"
